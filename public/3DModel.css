@@ -1,0 +1,153 @@
+
+
+/* Earth css --> */
+
+#canvasContainer {
+  width: 100vw;
+  height: 100vh;
+  padding-top:0%;
+  margin-bottom: 0;
+  margin-top: 12%;
+  padding-left: 0%;
+  position: absolute;
+  
+  /* background-image: url(../src/assets/universe.JPG);  */
+  /* background-image: url(../src/assets/planeta.jpg)  no-repeat center center;
+      background-repeat: no-repeat;
+      background-size: cover; */
+}
+
+
+
+
+/* canvasContainerLego css --> */
+
+#canvasContainerLego {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 0%;
+  margin-bottom: -25%;
+  padding-left: 0%;
+}
+
+
+
+/* Moon css --> */
+
+#canvasContainerMoon {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 0%;
+  margin-bottom: -150%;
+  padding-left: 0%;
+  /* background-image: url(../src/assets/universe.JPG);  */
+  background-image: url(../assets/planeta.jpg) no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Phoenix css --> */
+
+#canvasContainerPhoenix {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 0%;
+  margin-bottom: -225%;
+  margin-top: 20%;
+  padding-left: 0%;
+}
+
+/* Avatar css --> */
+
+#canvasContainerAvatar {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 0%;
+  margin-bottom: -385%;
+  margin-top: 20%;
+  padding-left: 0%;
+}
+
+/*---------Media Queries (medium devices)------------------*/
+
+@media screen and (max-width: 1024px) {
+  /* Earth css --> */
+
+  #canvasContainer {
+    width: 75%;
+    padding-top: 0%;
+    margin-bottom: -211%;
+    margin-left: 0%;
+  }
+
+  /* Moon css --> */
+
+  #canvasContainerMoon {
+    width: 75%;
+    padding-top: 0%;
+    margin-bottom: -364%;
+    margin-left: 0%;
+  }
+
+  /* Phoenix css --> */
+
+  #canvasContainerPhoenix {
+    width: 75%;
+    padding-top: 0%;
+    margin-bottom: -31%;
+    margin-left: 0%;
+  }
+
+  /* Avatar css --> */
+
+  #canvasContainerAvatar {
+    width: 75%;
+    padding-top: 0%;
+    margin-bottom: -960%;
+    margin-left: 0%;
+  }
+}
+
+/*---------Small Queries (Small devices)------------------*/
+
+@media screen and (max-width: 600px) {
+  /* Eath css --> */
+
+  #canvasContainer {
+    width: 20vw;
+    height: 50vh;
+    padding-top: 0%;
+    margin-bottom: -175%;
+    margin-left: 0%;
+  }
+
+  /* Moon css --> */
+
+  #canvasContainerMoon {
+    width: 20vw;
+    height: 50vh;
+    padding-top: 0%;
+    margin-bottom: -492%;
+    margin-left: -2%;
+  }
+
+  /* Phoenix css --> */
+
+  #canvasContainerPhoenix {
+    width: 20vw;
+    height: 50vh;
+    padding-top: 0%;
+    margin-bottom: -435%;
+    margin-left: 0%;
+  }
+
+  /* Avatar css --> */
+
+  #canvasContainerAvatar {
+    width: 20vw;
+    height: 50vh;
+    padding-top: 0%;
+    margin-bottom: -2430%;
+    margin-left: 0%;
+  }
+}

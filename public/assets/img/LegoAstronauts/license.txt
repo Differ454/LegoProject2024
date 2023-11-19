@@ -1,0 +1,8 @@
+Model Information:
+* title:	1980's Lego Spaceman Set
+* source:	https://sketchfab.com/3d-models/1980s-lego-spaceman-set-48230713e55148779f67dfecef938a0b
+* author:	JCulley3D (https://sketchfab.com/jamesculley)
+
+Model License:
+* license type:	SKETCHFAB Editorial (https://sketchfab.com/licenses)
+* requirements:	Use only in connection with events that are newsworthy or of public interest

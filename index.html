@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="240">
+    
+
+    <title>Vite + React</title>
+  </head>
+
+  <body>
+    
+    <canvas id="canvasContainer"></canvas> 
+    <canvas id="canvasContainerLego"></canvas>
+    <canvas id="canvasContainerMoon"></canvas>
+    <canvas id="canvasContainerPhoenix"></canvas>
+    <canvas id="canvasContainerAvatar"></canvas>
+   
+   
+
+    <div id="root"></div>
+    <!-- <script async type="module" src="/src/game.jsx"></script> -->
+
+    <script type="module" src="/public/3DModel.jsx"></script>
+    <script type="module" src="/public/main.jsx"></script>
+
+    <script type="module">
+      import("/public/game.jsx");
+    </script>
+  </body>
+</html>

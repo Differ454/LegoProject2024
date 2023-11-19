@@ -1,0 +1,11 @@
+Model Information:
+* title:	LEGO 6842-1: Small Space Shuttle Craft
+* source:	https://sketchfab.com/3d-models/lego-6842-1-small-space-shuttle-craft-5ab6051386ff43338170258d95f63c53
+* author:	HansWurschd (https://sketchfab.com/HansWurschd)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "LEGO 6842-1: Small Space Shuttle Craft" (https://sketchfab.com/3d-models/lego-6842-1-small-space-shuttle-craft-5ab6051386ff43338170258d95f63c53) by HansWurschd (https://sketchfab.com/HansWurschd) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
