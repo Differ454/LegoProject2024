@@ -40,6 +40,7 @@ const LegoAstronauts = () => {
   orbitControls.autoRotateSpeed = 3;
   orbitControls.enableZoom = false;
   
+  //test
 
   //Responsive Desing with Three Js
 
