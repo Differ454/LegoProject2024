@@ -7,10 +7,10 @@
   height: 100vh;
   padding-top:0%;
   margin-bottom: 0;
-  margin-top: 12%;
+  margin-top: 9.2%;
   padding-left: 0%;
-  position: absolute;
-  
+  position: absolute; 
+
   /* background-image: url(../src/assets/universe.JPG);  */
   /* background-image: url(../src/assets/planeta.jpg)  no-repeat center center;
       background-repeat: no-repeat;
@@ -28,6 +28,7 @@
   padding-top: 0%;
   margin-bottom: -25%;
   padding-left: 0%;
+  /* position: absolute; */
 }
 
 
@@ -38,7 +39,10 @@
   width: 100vw;
   height: 100vh;
   padding-top: 0%;
-  margin-bottom: -150%;
+  margin-bottom: 0%;
+  position: absolute;  
+  margin-top: -21%;
+  /* margin-bottom: -150%; */
   padding-left: 0%;
   /* background-image: url(../src/assets/universe.JPG);  */
   background-image: url(../assets/planeta.jpg) no-repeat center center;
@@ -52,8 +56,10 @@
   width: 100vw;
   height: 100vh;
   padding-top: 0%;
-  margin-bottom: -225%;
-  margin-top: 20%;
+  /* margin-bottom: -425%; */
+   position: absolute;  
+   /*here to cahnge the position */ 
+   margin-top: -2%; 
   padding-left: 0%;
 }
 
@@ -63,9 +69,12 @@
   width: 100vw;
   height: 100vh;
   padding-top: 0%;
-  margin-bottom: -385%;
-  margin-top: 20%;
+  /*here to cahnge the position */ 
+  margin-bottom: -70%;
+  margin-top: -150%;
   padding-left: 0%;
+  position: relative; 
+  
 }
 
 /*---------Media Queries (medium devices)------------------*/
