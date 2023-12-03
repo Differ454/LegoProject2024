@@ -13,6 +13,7 @@
 
 :root {
     --color-bg: #1f1f38;
+    --color-perro:rgb(25, 25, 122)8;
     --color-bg-variant: #2c2c6c;
     --color-primary: #4db5ff;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
@@ -110,6 +111,24 @@ a:hover {
     transition: var(--transition);
 }
 
+.btn-perro {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-bg);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+    
+}
+
+.btn-perro:hover {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    border-color: transparent;
+  }
+
 .btn:hover {
   background: var(--color-white);
   color: var(--color-bg);
@@ -120,6 +139,16 @@ a:hover {
     background: var(--color-primary);
     color: var(--color-bg);
 }
+
+
+.btn-primary-perro {
+    width: 75%;
+    background: var(--color-primary);
+    color: var(--color-bg);
+    
+    
+}
+
 
 .btn-primary-about {
     background: var(--color-primary);

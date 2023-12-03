@@ -164,12 +164,23 @@
   position: absolute;
   width: 100%;
   height: 11vh;
-  background: url("kiddo.png");
+  background: url("RedditLego.png");
   background-size: contain;
   background-repeat: no-repeat;
   left: 50%;
   bottom: 0px;
 }
+
+/* #jet {
+  position: absolute;
+  width: 100%;
+  height: 11vh;
+  background: url("RedditLego.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 50%;
+  bottom: 0px;
+} */
 
 .bullets {
   position: absolute;
@@ -181,6 +192,17 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+/* .bullets {
+  position: absolute;
+  bottom: 40px;
+  left: 41%;
+  width: 20px;
+  height: 20px;
+  background: url("bullet.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
 
 .rocks {
   position: absolute;
