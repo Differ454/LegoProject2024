@@ -14,6 +14,8 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 const LegoAstronauts = () => {
   // camera function
+  //test useEffect
+  
 
   const canvasContainer = document.querySelector("#canvasContainerLego");
   const scene = new THREE.Scene();
@@ -75,8 +77,8 @@ const LegoAstronauts = () => {
 
   //animate function
   const animate = () => {
-    orbitControls.update();
     requestAnimationFrame(animate);
+    orbitControls.update();
     renderer.render(scene, camera);
     // Rotation
     //loader.rotation.y += 0.004;
@@ -103,6 +105,8 @@ const LegoAstronauts = () => {
     mouse.y = -(event.clientY / innerHeight) * 2 + 1;
   });
   // scene.add(sphere);
+
+
 };
 
 

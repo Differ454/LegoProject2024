@@ -57,18 +57,63 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-var generaterocks = setInterval(() => {
+//useEffect here original code-->
+
+// var generaterocks = setInterval(() => {
+//   var rock = document.createElement("div");
+//   rock.classList.add("rocks");
+//   //Just getting the left of the rock to place it in random position...
+//   var rockleft = parseInt(
+//     window.getComputedStyle(rock).getPropertyValue("left")
+//   );
+//   //generate value between 0 to 450 where 450 => board width - rock width
+//   rock.style.left = Math.floor(Math.random() * 450) + "px";
+
+//   board.appendChild(rock);
+// },1500 ); //1000
+
+// var generaterocks = setInterval(() => {
+//   var rock = document.createElement("div");
+//   rock.classList.add("rocks");
+  
+//   // Generate value between 0 to 450 where 450 => board width - rock width
+//   var randomLeft = Math.floor(Math.random() * 450);
+//   rock.style.left = randomLeft + "px";
+
+//   // Append the rock to the board
+//   board.appendChild(rock);
+
+//   // Now get the left of the rock to place it in random position...
+//   var rockleft = parseInt(window.getComputedStyle(rock).getPropertyValue("left"));
+
+//   // Continue with any other logic you have for the rocks...
+
+// }, 1500);
+
+// code generate by chat gpt fixe it!!
+function generateRocks() {
+  
   var rock = document.createElement("div");
   rock.classList.add("rocks");
-  //Just getting the left of the rock to place it in random position...
-  var rockleft = parseInt(
-    window.getComputedStyle(rock).getPropertyValue("left")
-  );
-  //generate value between 0 to 450 where 450 => board width - rock width
+  
+  // generate value between 0 to 450 where 450 => board width - rock width
   rock.style.left = Math.floor(Math.random() * 450) + "px";
 
+  // Append the rock to the board
   board.appendChild(rock);
-}, 1000);
+  
+}
+
+var generateRocksInterval = setInterval(generateRocks, 1500);
+
+
+// 
+
+
+
+generateRocks()
+
+//useEffect here-->
 
 var moverocks = setInterval(() => {
   var rocks = document.getElementsByClassName("rocks");
