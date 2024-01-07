@@ -1,7 +1,7 @@
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;
-  gap: 15%;
+  gap: 15%; 
 }
 
 /* .about__me {
@@ -35,9 +35,17 @@
 } */
 
 .about__cards {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  /* position: relative;
+  left: -50%; */
+  position: absolute;
+  right:32%;
   gap: 1.5rem;
+  
 }
 
 .about__card {
@@ -95,7 +103,8 @@
   width: 200px;
   height: 200px;
   margin: auto;
-  position: relative;
+  position: absolute;
+  left:125%;
 }
 
 .cube img {
@@ -144,9 +153,11 @@
   animation: loop 10s linear infinite;
 }
 
+/* css cube */
+
 /* Github Game */
 
-#board {
+/* #board {
   position: relative;
   width: 500px;
   height: 500px;
@@ -155,21 +166,9 @@
   background: url("blue.jpg");
   background-size: 600px;
   background-position-x: center;
-  /* background-color: rgb(31, 66, 184); */
   overflow: hidden;
   border-radius: 1rem;
-}
-
-#jet {
-  position: absolute;
-  width: 100%;
-  height: 11vh;
-  background: url("RedditLego.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  left: 50%;
-  bottom: 0px;
-}
+} */
 
 /* #jet {
   position: absolute;
@@ -182,16 +181,7 @@
   bottom: 0px;
 } */
 
-.bullets {
-  position: absolute;
-  bottom: 40px;
-  left: 61%;
-  width: 20px;
-  height: 20px;
-  background: url("bullet.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+
 
 /* .bullets {
   position: absolute;
@@ -204,7 +194,7 @@
   background-repeat: no-repeat;
 } */
 
-.rocks {
+/* .rocks {
   position: absolute;
   top: 41px;
   width: 50px;
@@ -212,21 +202,19 @@
   background: url("llego.png");
   background-size: contain;
   background-repeat: no-repeat;
-}
+} */
 
-.rocks1 {
+/* .rocks1 {
   position: absolute;
   top: 0px;
   width: 100%;
   height: 50vh;
   font-family: "Poppins", sans-serif;
-  /* background: url("react.png"); */
   background-size: contain;
-  /* background-repeat: no-repeat; */
   color: aliceblue;
-}
+} */
 
-#sign {
+/* #sign {
   position: absolute;
   top: 65%;
   left: 53%;
@@ -235,9 +223,9 @@
   font-family: "Poppins", sans-serif;
   color: #ecf008;
   margin-left: -21%;
-}
+} */
 
-#points {
+/* #points {
   position: absolute;
   top: 29%;
   left: 32%;
@@ -245,7 +233,7 @@
   opacity: 1;
   font-size: 8em;
   color: rgb(19, 5, 14);
-}
+} */
 
 /* Github Game */
 
@@ -273,11 +261,11 @@
     margin-right: -16%;
   }
 
-  #board {
+  /* #board {
     margin: 1rem 0 1.5rem;
     margin-left: 5%;
     width: 107%;
-  }
+  } */
 
   /* .about__me-image .picture {
     width: 95%;
@@ -300,11 +288,11 @@
   .about__cards {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin-left: 5%;
+    margin-left: 51%;
     width: 99%;
   }
 
-  #board {
+  /* #board {
     margin: 1rem 0 1.5rem;
     margin-left: 6%;
     width: 98%;
@@ -316,7 +304,7 @@
 
   #sign {
     margin-left: -28%;
-  }
+  } */
 
   /* .about__content {
     text-align: center;

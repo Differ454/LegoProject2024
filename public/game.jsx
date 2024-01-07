@@ -75,7 +75,7 @@ window.addEventListener("keydown", (e) => {
 // var generaterocks = setInterval(() => {
 //   var rock = document.createElement("div");
 //   rock.classList.add("rocks");
-  
+
 //   // Generate value between 0 to 450 where 450 => board width - rock width
 //   var randomLeft = Math.floor(Math.random() * 450);
 //   rock.style.left = randomLeft + "px";
@@ -92,47 +92,46 @@ window.addEventListener("keydown", (e) => {
 
 // code generate by chat gpt fixe it!!
 function generateRocks() {
-  
+
   var rock = document.createElement("div");
   rock.classList.add("rocks");
-  
+
   // generate value between 0 to 450 where 450 => board width - rock width
   rock.style.left = Math.floor(Math.random() * 450) + "px";
 
+
+
   // Append the rock to the board
   board.appendChild(rock);
-  
+
 }
 
-var generateRocksInterval = setInterval(generateRocks, 1500);
-
-
-// 
-
-
+setInterval(generateRocks, 1000);
 
 generateRocks()
 
 //useEffect here-->
+//Original line --> var moverocks = setInterval(() => {
 
-var moverocks = setInterval(() => {
-  var rocks = document.getElementsByClassName("rocks");
+ var moverocks = setTimeout(() => {
+   var rocks = document.getElementsByClassName("rocks");
 
-  if (rocks != undefined) {
-    for (var i = 0; i < rocks.length; i++) {
-      //Now I have to increase the top of each rock,so that the rocks can move downwards..
-      var rock = rocks[i]; //getting each rock
-      var rocktop = parseInt(
-        window.getComputedStyle(rock).getPropertyValue("top")
-      );
-      //475 => boardheight - rockheight + 25 ---> //(rocktop >= 475)
-      // if (rocktop >= 475) {
-      //   alert("Game Over");
-      //   clearInterval(moverocks);
-      //   window.location.reload();
-      // }
+   if (rocks != undefined) {
+     for (var i = 0; i < rocks.length; i++) {
+       //Now I have to increase the top of each rock,so that the rocks can move downwards..
+       var rock = rocks[i]; //getting each rock
+       var rocktop = parseInt(
+         window.getComputedStyle(rock).getPropertyValue("top")
+       );
+
+        //  475 => boardheight - rockheight + 25
+        //if (rocktop >= 475) {
+          // alert("Game Over");
+         // setTimeout(moverocks);
+          // window.location.reload();
+       // }
 
       rock.style.top = rocktop + 25 + "px";
-    }
-  }
-}, 450);
+     }
+   }
+ }, 450);

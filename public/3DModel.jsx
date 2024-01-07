@@ -67,8 +67,8 @@ const LegoAstronauts = () => {
   });
 
   camera.position.z = 4;
-  camera.position.y = -2;
-  camera.position.x =  7;
+  camera.position.y = -1.8;
+  camera.position.x = 7;
 
   const mouse = {
     x: undefined,
@@ -343,7 +343,9 @@ const Earth = () => {
   scene.add(sphere);
 
   camera.position.z = 15.6;
-
+  
+  
+  
   const mouse = {
     x: undefined,
     y: undefined,
@@ -576,6 +578,110 @@ const Phoenix = () => {
 
 
 
+// Animation Model --> test
+
+// const AnimationModel = () => {
+//   // camera function
+//   //test useEffect
+  
+
+//   const canvasContainer = document.querySelector("#canvasContainerAnimation");
+//   const scene = new THREE.Scene();
+//   const camera = new THREE.PerspectiveCamera(
+//     70,
+//     canvasContainer.offsetWidth / canvasContainer.offsetHeight,
+//     0.1,
+//     1000
+//   );
+//   console.log(scene);
+
+//   //function to render
+
+//   const renderer = new THREE.WebGLRenderer({
+//     antialias: true,
+//     canvas: document.querySelector("#canvasContainerAnimation"), //--> to improve the image
+//     alpha: true,
+//   });
+
+//   //OrbitControls
+//   const orbitControls = new OrbitControls(camera, renderer.domElement);
+//   orbitControls.enableDamping = true;
+//   orbitControls.autoRotate = true;
+//   orbitControls.autoRotateSpeed = 3;
+//   orbitControls.enableZoom = false;
+  
+//   //test
+
+//   //Responsive Desing with Three Js
+
+//   window.addEventListener("resize", function () {
+//     var width = window.innerWidth;
+//     var height = window.innerHeight;
+//     camera.aspect = width / height;
+//     camera.updateProjectionMatrix();
+//     renderer.setSize(width, height);
+//   });
+
+//   //Responsive Desing with Three Js
+
+//   renderer.setSize(canvasContainer.offsetWidth, canvasContainer.offsetHeight);
+//   renderer.setPixelRatio(window.devicePixelRatio); //--> to improve the pixels to the image
+
+//   var loader = new GLTFLoader();
+//   loader.load("/assets/img/Animated/scene.glb", function (gltf) {
+//     const model = gltf.scene;
+
+//     scene.add(model);
+//   });
+
+//   camera.position.z = 4;
+//   camera.position.y = -1.8;
+//   camera.position.x = 7;
+
+//   const mouse = {
+//     x: undefined,
+//     y: undefined,
+//   };
+
+//   //animate function
+//   const animate = () => {
+//     requestAnimationFrame(animate);
+//     orbitControls.update();
+//     renderer.render(scene, camera);
+//     // Rotation
+//     //loader.rotation.y += 0.004;
+    
+//   };
+
+  
+
+//   // Light
+
+//   const ambientalLight = new THREE.AmbientLight(0xffffff, 1);
+//   scene.add(ambientalLight);
+
+//   const PointLight = new THREE.PointLight(0xffffff, 1);
+//   PointLight.position.set(6, 7, 6);
+//   scene.add(PointLight);
+
+//   animate();
+
+//   // function to move the mouse
+
+//   addEventListener("mousemove", () => {
+//     mouse.x = (event.clientX / innerWidth) * 2 - 1;
+//     mouse.y = -(event.clientY / innerHeight) * 2 + 1;
+//   });
+//   // scene.add(sphere);
+
+
+// };
+
+// Animation Model --> test
+
+
+
+
 
 
 
@@ -586,6 +692,8 @@ const Models = () => {
   LegoAstronauts();
   Moon();
   Phoenix();
+  // AnimationModel();
+  
   
 };
 

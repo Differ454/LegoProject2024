@@ -63,7 +63,7 @@ const About = () => {
 
           {/* Github Game */}
 
-          <div id="board">
+          {/* <div id="board">
             <div className="rocks"></div>
             <div className="rocks1">
               
@@ -75,12 +75,11 @@ const About = () => {
             <div id="sign">Presss Enter to shoot</div>
 
             <div id="jet"></div>
-          </div>
+          </div> */}
+
+            {/* Github Game */}
 
           
-          {/* <a href="#contact" className="btn btn-primary-about">
-            Let's Talk
-          </a> */}
         </div>
       </div>
     </section>
