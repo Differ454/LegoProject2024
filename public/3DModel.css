@@ -1,5 +1,4 @@
 
-
 /* Earth css --> */
 
 #canvasContainer {
@@ -17,7 +16,37 @@
       background-size: cover; */
 }
 
+/* Earth css --> */
 
+/* canvasContainerAnimation css --> */
+
+#canvasContainerAnimation {
+  width: 100vw;
+  height: 100vh;
+  padding-top: -41%;
+  margin-bottom: 0%;
+  margin-top:-30%;
+  padding-left: 0%;
+  position: absolute; 
+  left: 38%;
+} 
+
+/* canvasContainerAnimation css --> */
+
+/* canvasContainerSatelite css --> */
+
+#canvasContainerSatelite {
+  width: 100vw;
+  height: 100vh;
+  padding-top: -41%;
+  margin-bottom: 0%;
+  margin-top:-15%;
+  padding-left: 0%;
+  position: absolute; 
+  left: -38%;
+} 
+
+/* canvasContainerSatelite css --> */
 
 
 /* canvasContainerLego css --> */
@@ -77,18 +106,7 @@
   
 }
 
-/* canvasContainerAnimation css --> */
 
-/* #canvasContainerAnimation {
-  width: 100vw;
-  height: 100vh;
-  padding-top: 0%;
-  margin-bottom: 25%;
-  padding-left: 0%;
-  
-} */
-
-/* canvasContainerAnimation css --> */
 
 
 
