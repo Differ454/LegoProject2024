@@ -580,7 +580,7 @@ const Phoenix = () => {
 
 
 
-// Animation Model --> test
+// Animation Model Dron --> test
 
  const AnimationModel = () => {
 //   // camera function
@@ -634,7 +634,7 @@ const Phoenix = () => {
 
     // to content the whole object
 
-    loader.load("/assets/img/Perro/perro.glb", function (gltf) {
+    loader.load("/assets/img/BlackHole/scene.gltf", function (gltf) {
     mixer = new THREE.AnimationMixer(gltf.scene);
     const action = mixer.clipAction(gltf.animations[0]); // Assuming there is at least one animation
     action.play();
@@ -647,12 +647,16 @@ const Phoenix = () => {
     
    });
 
+
+  //  camera.position.z = 4;
+  //  camera.position.y = -1.8;
+  //  camera.position.x = 2;
   
 
  
-   camera.position.z = 4;
-   camera.position.y = -1.8;
-   camera.position.x = 2;
+   camera.position.z = 18;
+   camera.position.y = 18;
+   camera.position.x = 10;
 
    const mouse = {
      x: undefined,
