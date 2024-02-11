@@ -42,7 +42,7 @@ const LegoAstronauts = () => {
   const orbitControls = new OrbitControls(camera, renderer.domElement);
   orbitControls.enableDamping = true;
   orbitControls.autoRotate = true;
-  orbitControls.autoRotateSpeed = 3;
+  orbitControls.autoRotateSpeed = 5;
   orbitControls.enableZoom = false;
   
   //test
@@ -92,11 +92,11 @@ const LegoAstronauts = () => {
 
   // Light
 
-  const ambientalLight = new THREE.AmbientLight(0xffffff, 1);
+  const ambientalLight = new THREE.AmbientLight(0xffffff, 0.9);
   scene.add(ambientalLight);
 
   const PointLight = new THREE.PointLight(0xffffff, 1);
-  PointLight.position.set(6, 7, 6);
+  PointLight.position.set(50, 50, 50); // (6, 7, 6); 
   scene.add(PointLight);
 
   animate();
@@ -386,7 +386,7 @@ const Earth = () => {
 };
 
 
-//Function Avatar -->
+//Function Red astrounaut -->
 
 const Avatar = () => {
   // camera function
@@ -460,8 +460,8 @@ const Avatar = () => {
   const ambientalLight = new THREE.AmbientLight(0xffffff, 1);
   scene.add(ambientalLight);
 
-  const PointLight = new THREE.PointLight(0xffffff, 1);
-  PointLight.position.set(6, 7, 6);
+  const PointLight = new THREE.PointLight(0xfffffff, 4);
+  PointLight.position.set(30, 60, 50);  // 6, 7, 6
   scene.add(PointLight);
 
   animate();
@@ -505,7 +505,7 @@ const Phoenix = () => {
   const orbitControls = new OrbitControls(camera, renderer.domElement);
   orbitControls.enableDamping = true;
   orbitControls.autoRotate = true;
-  orbitControls.autoRotateSpeed = 6.5;
+  orbitControls.autoRotateSpeed = 8;
   orbitControls.enableZoom = false;
   
 
@@ -565,8 +565,8 @@ const Phoenix = () => {
   const ambientalLight = new THREE.AmbientLight(0xffffff, 1);
   scene.add(ambientalLight);
 
-  const PointLight = new THREE.PointLight(0xffffff, 1);
-  PointLight.position.set(6, 7, 6);
+  const PointLight = new THREE.PointLight(0xfffffff, 8, 1000);
+  PointLight.position.set(30, 30, 20); // 6, 7, 6
   scene.add(PointLight);
 
   animate();
@@ -583,7 +583,7 @@ const Phoenix = () => {
 
 
 
-// Animation Model Dron --> test
+// Animation Model corner station animated --> test
 
  const AnimationModel = () => {
 //   // camera function
@@ -612,10 +612,10 @@ const Phoenix = () => {
    const orbitControls = new OrbitControls(camera, renderer.domElement);
    orbitControls.enableDamping = true;
    orbitControls.autoRotate = true;
-   orbitControls.autoRotateSpeed = 23;
+   orbitControls.autoRotateSpeed = 1;
    orbitControls.enableZoom = false;
   
-//   //test
+
 
 //   //Responsive Desing with Three Js
 
@@ -637,7 +637,7 @@ const Phoenix = () => {
 
     // to content the whole object
 
-    loader.load("/assets/img/BlackHole/scene.gltf", function (gltf) {
+    loader.load("/assets/img/space_station_3/scene.gltf", function (gltf) {
     mixer = new THREE.AnimationMixer(gltf.scene);
     const action = mixer.clipAction(gltf.animations[0]); // Assuming there is at least one animation
     action.play();
@@ -647,19 +647,25 @@ const Phoenix = () => {
       scene.add(model);
 
      //model.position.x = -180;
+
+     const light = new THREE.PointLight( 0xff000000, 25, 3000 ); // ( 0xff0000, 6, 1000 );
+light.position.set( 40, 50, 30 );
+scene.add( light );
+
+     
     
    });
 
 
-  //  camera.position.z = 4;
-  //  camera.position.y = -1.8;
-  //  camera.position.x = 2;
+    //camera.position.z = 4;
+    //camera.position.y = -1.8;
+    //camera.position.x = 2;
   
 
  
-   camera.position.z = 18;
-   camera.position.y = 18;
-   camera.position.x = 10;
+   camera.position.z = 0.8;
+   camera.position.y = 4;
+   camera.position.x = 5;
 
    const mouse = {
      x: undefined,
@@ -672,7 +678,7 @@ const Phoenix = () => {
 
        // Update the animation mixer
        if (mixer) {
-        const delta = 0.06; // You can use clock.getDelta() for a more accurate value
+        const delta = 0.02; // You can use clock.getDelta() for a more accurate value
         mixer.update(delta);
     }
 
@@ -685,11 +691,11 @@ const Phoenix = () => {
 
 // Light
 
-   const ambientalLight = new THREE.AmbientLight(0xffffff, 1);
+   const ambientalLight = new THREE.AmbientLight(0xffff, 1, 1000);
    scene.add(ambientalLight);
 
-   const PointLight = new THREE.PointLight(0xffffff, 1);
-   PointLight.position.set(6, 7, 6);
+   const PointLight = new THREE.PointLight(0xfffff, 4);
+   PointLight.position.set(6, 9, 6);
    scene.add(PointLight);
 
    animate();
@@ -709,7 +715,7 @@ const Phoenix = () => {
 
 
 
-// SateliteModel -->
+// SateliteModel SpaceStation -->
 
 
 const SateliteModel = () => {
@@ -798,8 +804,8 @@ const SateliteModel = () => {
   const ambientalLight = new THREE.AmbientLight(0xffffff, 1);
   scene.add(ambientalLight);
 
-  const PointLight = new THREE.PointLight(0xffffff, 1);
-  PointLight.position.set(6, 7, 6);
+  const PointLight = new THREE.PointLight(0xfffffff, 1);
+  PointLight.position.set(30, 50 ,50);  // (6, 7, 6)
   scene.add(PointLight);
 
   animate();

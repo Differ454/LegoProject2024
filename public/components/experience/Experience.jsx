@@ -17,17 +17,17 @@ import { SiThreedotjs } from "react-icons/si";
 function Experience() {
   return (
     <section id="experience">
-      <h1>Experience</h1>
-      <h2>Software Development</h2>
+      <h1>Erfaring</h1>
+      <h2>Softwareudvikling</h2>
       <div className="container experience__container">
         <div className="experience__fontend">
-          <h3>Frontend Development</h3>
+          <h3>Frontend udvikling</h3>
           <div className="experience__content">
             <article className="experience__details">
               <AiOutlineHtml5 className="experience__details-icon"/>
               <div>
                 <h4>HTML</h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">Erfaren</small>
               </div>
             </article>
 
@@ -35,7 +35,7 @@ function Experience() {
               <SiCsswizardry className="experience__details-icon"/>
               <div>
                 <h4>CSS</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">Mellemliggende</small>
               </div>
             </article>
 
@@ -43,7 +43,7 @@ function Experience() {
               <SiJavascript className="experience__details-icon"/>
               <div>
                 <h4>JavaScript</h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">Erfaren</small>
               </div>
             </article>
 
@@ -51,7 +51,7 @@ function Experience() {
               <SiTailwindcss className="experience__details-icon"/>
               <div>
                 <h4>Tailwind</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">Mellemliggende</small>
               </div>
             </article>
 
@@ -59,7 +59,7 @@ function Experience() {
               <GrReactjs className="experience__details-icon"/>
               <div>
                 <h4>ReactJs</h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">Erfaren</small>
               </div>
             </article>
 
@@ -68,20 +68,20 @@ function Experience() {
               <SiThreedotjs className="experience__details-icon"/>
               <div>
                 <h4>ThreeJs</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">Mellemliggende</small>
               </div>
             </article> 
           </div>
         </div>
         {/*----------------> End of Frontend <-----------------*/}
         <div className="experience__backend">
-          <h3>Backend Development</h3>
+          <h3>Backend udvikling</h3>
           <div className="experience__content">
             <article className="experience__details">
               <FaNodeJs className="experience__details-icon"/>
               <div>
                 <h4>NodeJs</h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">Erfaren</small>
               </div>
             </article>
 
@@ -89,7 +89,7 @@ function Experience() {
               <SiPhp className="experience__details-icon"/>
               <div>
                 <h4>PHP</h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">Erfaren</small>
               </div>
             </article>
 
@@ -97,7 +97,7 @@ function Experience() {
               <SiMongodb className="experience__details-icon"/>
               <div>
                 <h4>MongoDB</h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">Erfaren</small>
               </div>
             </article>
 
@@ -105,7 +105,7 @@ function Experience() {
               <SiMysql className="experience__details-icon"/>
               <div>
                 <h4>MySQL</h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">Erfaren</small>
               </div>
             </article>
           </div>
