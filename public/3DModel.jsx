@@ -23,7 +23,7 @@ const LegoAstronauts = () => {
   const canvasContainer = document.querySelector("#canvasContainerLego");
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(
-    70,
+    80.5,
     canvasContainer.offsetWidth / canvasContainer.offsetHeight,
     0.1,
     1000
@@ -171,20 +171,7 @@ const Moon = () => {
     })
   );
 
-  // create atmosphere
-
-  const atmosphere = new THREE.Mesh(
-    new THREE.SphereGeometry(5, 50, 50),
-    new THREE.ShaderMaterial({
-      vertexShader: atmosphereVertexShader,
-      fragmentShader: atmosphereFragmentShader,
-      blending: THREE.AdditiveBlending,
-      side: THREE.BackSide,
-    })
-  );
-
-  atmosphere.scale.set(1.1, 1.1, 1.2);
-  // scene.add(atmosphere);
+  
 
   const group = new THREE.Group();
   group.add(sphere);
@@ -593,7 +580,7 @@ const Phoenix = () => {
   const canvasContainer = document.querySelector("#canvasContainerAnimation");
    const scene = new THREE.Scene();
    const camera = new THREE.PerspectiveCamera(
-     70,
+     95,
      canvasContainer.offsetWidth / canvasContainer.offsetHeight,
      0.1,
      1000
@@ -648,7 +635,7 @@ const Phoenix = () => {
 
      //model.position.x = -180;
 
-     const light = new THREE.PointLight( 0xff000000, 25, 3000 ); // ( 0xff0000, 6, 1000 );
+     const light = new THREE.PointLight( 0xff000000, 29, 3000 ); // ( 0xff0000, 6, 1000 );
 light.position.set( 40, 50, 30 );
 scene.add( light );
 
@@ -694,7 +681,7 @@ scene.add( light );
    const ambientalLight = new THREE.AmbientLight(0xffff, 1, 1000);
    scene.add(ambientalLight);
 
-   const PointLight = new THREE.PointLight(0xfffff, 4);
+   const PointLight = new THREE.PointLight(0xfffff, 4.6);
    PointLight.position.set(6, 9, 6);
    scene.add(PointLight);
 
