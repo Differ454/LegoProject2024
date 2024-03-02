@@ -6,15 +6,10 @@
   height: 100vh;
   padding-top:0%;
   margin-bottom: 0;
-  margin-top: 8%;
-  /* margin-top: 9.2%; */
+  margin-top: 0%;
   padding-left: 0%;
   position: absolute; 
-
-  /* background-image: url(../src/assets/universe.JPG);  */
-  /* background-image: url(../src/assets/planeta.jpg)  no-repeat center center;
-      background-repeat: no-repeat;
-      background-size: cover; */
+  top: 14%;
 }
 
 /* Earth css --> */
@@ -24,31 +19,32 @@
 #canvasContainerAnimation {
   width: 33vw;
   height: 100vh;
-  padding-top: -41%;
+  padding-top: 0%;
   margin-bottom: 0%;
-  margin-top:-30%;
+  margin-top:0%;
   margin-right: 0%;
   margin-left: 0%;
   padding-right: 0%;
   padding-left: 0%;
   position: absolute; 
   left: 67%;
-  
+  top:-20%;
 } 
 
 /* canvasContainerAnimation css --> */
 
-/* canvasContainerSatelite css --> */
+/* canvasContainerStateSpace css --> */
 
 #canvasContainerSatelite {
   width: 100vw;
   height: 100vh;
-  padding-top: -41%;
+  padding-top: 0%;
   margin-bottom: 0%;
-  margin-top:-15%;
+  margin-top:0%;
   padding-left: 0%;
   position: absolute; 
   left: -38%;
+  top:10%;
 } 
 
 /* canvasContainerSatelite css --> */
@@ -59,14 +55,12 @@
 #canvasContainerLego {
   width: 100vw;
   height: 100vh;
-  padding-top: 0%;
+  padding-bottom: 12%;
   margin-bottom: -25%;
   padding-right: 6%;
-  /* position: absolute;   */
-  margin-top: -3%;
+  margin-top: -6%;
    
 }
-
 
 
 /* Moon css --> */
@@ -77,29 +71,25 @@
   padding-top: 0%;
   margin-bottom: 0%;
   position: absolute;  
-  margin-top: -21%;
-  /* margin-bottom: -150%; */
+  margin-top: 0%;
   padding-left: 0%;
-  /* background-image: url(../src/assets/universe.JPG);  */
-  background-image: url(../assets/planeta.jpg) no-repeat center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  top: -12%;
+
 }
 
-/* Phoenix css --> */
+/* Phoenix css --> Blue Astrounaut*/
 
 #canvasContainerPhoenix {
   width: 100vw;
   height: 100vh;
   padding-top: 0%;
-  /* margin-bottom: -425%; */
-   position: absolute;  
-   /*here to cahnge the position */ 
-   margin-top: -2%; 
+  position: absolute;  
+  margin-top: 0%; 
   padding-left: 0%;
+  top:40%
 }
 
-/* Avatar css --> */
+/* Avatar css --> Red Astrounaut */
 
 #canvasContainerAvatar {
   width: 100vw;

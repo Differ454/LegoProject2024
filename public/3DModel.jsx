@@ -23,7 +23,7 @@ const LegoAstronauts = () => {
   const canvasContainer = document.querySelector("#canvasContainerLego");
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(
-    80.5,
+    98.2,
     canvasContainer.offsetWidth / canvasContainer.offsetHeight,
     0.1,
     1000
@@ -123,7 +123,7 @@ const Moon = () => {
   const canvasContainer = document.querySelector("#canvasContainerMoon");
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(
-    70,
+    90,
     canvasContainer.offsetWidth / canvasContainer.offsetHeight,
     0.1,
     1000

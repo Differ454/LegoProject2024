@@ -1,7 +1,9 @@
 header {
   height: 100vh;
-  padding-top: 7rem;
+  padding-top: 20%;
   overflow: hidden; 
+  position: relative;
+  margin-top: -10rem;
   
 }
 
@@ -9,15 +11,19 @@ header {
   text-align: center;
   height: 100%;
   position: relative;
-  margin-top: -3%;
+  margin-top: 0%;
+  top:-50%
 }
+
 
 /* ------------ CTA ----------*/
 .cta {
-  margin-top: 0.5rem;
+  margin-top: 0%;
   display: flex;
   gap: 1.2rem;
   justify-content: center;
+  
+  
 }
 /* ------------ Header Socials ----------*/
 
@@ -46,7 +52,8 @@ header {
   height: 25rem;
   position: absolute;
   left: calc(51% - 11rem);
-  margin-top: 8rem;
+  margin-top: 15%;
+  
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 0rem 0.5rem 4.5rem;
