@@ -1,0 +1,242 @@
+header {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: -65rem;
+  z-index: 2;
+
+}
+
+.header__container {
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 0rem;
+
+}
+
+
+/* ------------ CTA ----------*/
+.cta {
+  margin-top: 0%;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+
+
+}
+
+/* ------------ Header Socials ----------*/
+
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 3rem;
+  background: var(--color-primary);
+}
+
+/* ------------ ME ----------*/
+/* background: linear-gradient(var(--color-primary), transparent); */
+.Me {
+  background: transparent;
+  width: 22rem;
+  height: 22rem;
+  position: absolute;
+  left: calc(51% - 11rem);
+  margin-top: 25%;
+
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 0rem 0.5rem 4.5rem;
+  top: -15%;
+}
+
+.Me img {
+
+  width: 80%;
+  position: relative;
+  left: 8%;
+
+}
+
+.Me:hover {
+  box-shadow: 0 0 30px #1c6dca;
+}
+
+/* ------------ Scroll Down ----------*/
+
+.scroll__down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/*---------Media Queries (medium devices)------------------*/
+@media screen and (min-width: 1920px) {
+  header {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: -83rem;
+    z-index: 2;
+
+  }
+  .scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 25rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+  .header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 23rem;
+  }
+
+  .header__container {
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0rem;
+
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: -65rem;
+    z-index: 2;
+
+  }
+
+  .header__container {
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0rem;
+
+  }
+
+  /* .header__container h1 {
+    margin-left: 16%;
+    font-size: 2.5rem;
+    font-style: Arial;
+    color: var(--color-primary);
+
+  }
+
+  .header__container h3 {
+    margin-left: 16%;
+    font-style: Arial;
+
+
+  }
+
+  .header__container h4 {
+    margin-left: 16%;
+    font-style: Arial;
+
+
+  }
+
+  .Me {
+    left: calc(50% - 11rem);
+    margin-left: 11%;
+  }
+
+  .cta {
+    margin-left: 14%;
+  }
+
+  .scroll__down {
+    right: -9.3rem;
+  } */
+}
+
+/*---------Small Queries (Small devices)------------------*/
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+
+  .header__container {
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0rem;
+  }
+
+  .header__container h1 {
+    margin-left: 6%;
+    font-size: 2.5rem;
+    font-style: Arial;
+    color: var(--color-primary);
+
+  }
+
+  .header__container h3 {
+    margin-left: 10%;
+    font-style: Arial;
+
+
+  }
+
+  .header__container h4 {
+    margin-left: 8%;
+    font-style: Arial;
+
+
+  }
+
+  .cta {
+    margin-left: 16%;
+  }
+
+  .Me {
+    left: calc(55% - 11rem);
+    margin-left: 1%;
+  }
+}

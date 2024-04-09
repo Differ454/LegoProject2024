@@ -1,0 +1,279 @@
+/* Earth css --> */
+
+#canvasContainer {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 7rem;
+  z-index: 2;
+}
+
+/* Earth css --> */
+
+/* canvasContainerAnimation css --> */
+
+#canvasContainerAnimation {
+  width: 33vw;
+  height: 100vh;
+  position: absolute;
+  left: 67rem;
+  top: -15rem;
+}
+
+/* canvasContainerAnimation css --> */
+
+/* canvasContainerStateSpace css --> */
+
+#canvasContainerSatelite {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: -38rem;
+  top: 10rem;
+}
+
+/* canvasContainerSatelite css --> */
+
+
+/* canvasContainerLego Astrounauts css --> */
+
+#canvasContainerLego {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: -5rem;
+  left: 1rem;
+  z-index: 1;
+
+}
+
+
+/* Moon css --> */
+
+#canvasContainerMoon {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: -4rem;
+  left: 3rem;
+
+}
+
+/* Phoenix css --> Blue Astrounaut*/
+
+#canvasContainerPhoenix {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 20rem;
+  z-index: 2;
+}
+
+/* Avatar css --> Red Astrounaut */
+
+#canvasContainerAvatar {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: 0rem;
+}
+
+
+
+
+
+/*---------Media Queries (medium devices)------------------*/
+@media screen and  (min-width: 1920px) {
+  /* Earth css --> */
+
+  #canvasContainer {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 7rem;
+    z-index: 2;
+  }
+
+  /* canvasContainerAnimation css --> */
+
+  #canvasContainerAnimation {
+    width: 33vw;
+    height: 100vh;
+    position: absolute;
+    left: 87rem;
+    top: -15rem;
+  }
+
+
+  /* canvasContainerStateSpace css --> */
+
+  #canvasContainerSatelite {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: -48rem;
+    top: 10rem;
+  }
+
+  /* canvasContainerLego Astrounauts css --> */
+
+  #canvasContainerLego {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: -8rem;
+    left: 1rem;
+    z-index: 1;
+
+  }
+
+  /* Moon css --> */
+
+  #canvasContainerMoon {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: -8rem;
+    left: 3rem;
+  }
+
+  /* Phoenix css --> Blue Astrounaut*/
+
+  #canvasContainerPhoenix {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 20rem;
+    z-index: 2;
+  }
+
+  /* Avatar css --> Red Astrounaut */
+
+  #canvasContainerAvatar {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: -6rem;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  /* Earth css --> */
+
+  #canvasContainer {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 7rem;
+    z-index: 2;
+  }
+
+  /* canvasContainerAnimation css --> */
+
+  #canvasContainerAnimation {
+    width: 33vw;
+    height: 100vh;
+    position: absolute;
+    left: 67rem;
+    top: -15rem;
+  }
+
+
+  /* canvasContainerStateSpace css --> */
+
+  #canvasContainerSatelite {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: -38rem;
+    top: 10rem;
+  }
+
+  /* canvasContainerLego Astrounauts css --> */
+
+  #canvasContainerLego {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: -5rem;
+    left: 1rem;
+    z-index: 1;
+
+  }
+
+  /* Moon css --> */
+
+  #canvasContainerMoon {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: -4rem;
+    left: 3rem;
+  }
+
+  /* Phoenix css --> Blue Astrounaut*/
+
+  #canvasContainerPhoenix {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 20rem;
+    z-index: 2;
+  }
+
+  /* Avatar css --> Red Astrounaut */
+
+  #canvasContainerAvatar {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0rem;
+  }
+}
+
+/*---------Small Queries (Small devices)------------------*/
+
+@media screen and (max-width: 600px) {
+  /* Eath css --> */
+
+  #canvasContainer {
+    width: 40vw;
+    height: 35vh;
+    position: absolute;
+    top: 7rem;
+    left: 8rem;
+    z-index: 2;
+
+  }
+
+  /* Moon css --> */
+
+  #canvasContainerMoon {
+    width: 40vw;
+    height: 35vh;
+    position: absolute;
+    top: 24rem;
+    left: 3rem;
+  }
+
+  /* Phoenix css --> */
+
+  #canvasContainerPhoenix {
+    width: 20vw;
+    height: 50vh;
+    padding-top: 0%;
+    margin-bottom: -435%;
+    margin-left: 0%;
+  }
+
+  /* Avatar css --> */
+
+  #canvasContainerAvatar {
+    width: 20vw;
+    height: 50vh;
+    padding-top: 0%;
+    margin-bottom: -2430%;
+    margin-left: 0%;
+  }
+}

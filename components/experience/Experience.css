@@ -1,0 +1,137 @@
+#experience {
+  
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: -60rem;
+    
+  
+  
+}
+
+.experience__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 110px;
+}
+
+#experience h2 {
+  margin-top: 33px;
+}
+
+#experience h5 {
+  margin-top: 100px;
+  font-size: 1.7rem;
+  font-style: Arial;
+  color: var(--color-primary);
+}
+
+#experience h1 {
+  margin-top: 300px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.experience__container > div {
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary-variant),
+    transparent
+  );
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+
+  transition: var(--transition);
+}
+
+.experience__container > div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+  box-shadow: 0 0 20px #ece7e7;
+}
+
+.experience__container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+}
+
+.experience__details {
+  display: flex;
+  gap: 1rem;
+}
+
+.experience__details-icon {
+  margin-top: 6px;
+  color: var(--color-primary);
+}
+
+/*---------Media Queries (medium devices)------------------*/
+
+@media screen and  (min-width: 1920px) {
+  #experience {
+    position: relative;
+    top: -85rem;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+
+  #experience h1 {
+    /* text-align: center; */
+    margin-top: 250px;
+    margin-left: 4%;
+    
+    
+  }
+
+  #experience h2 {
+    text-align: center;
+    margin-top: 3px;
+  }
+  
+
+  .experience__container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+    margin-left: 20%;
+  }
+
+  .experience__content {
+    padding: 1rem;
+  }
+}
+
+/*---------Small Queries (Small devices)------------------*/
+
+@media screen and (max-width: 600px) {
+  .experience__container {
+    gap: 1rem;
+  }
+
+  #experience h1 {
+    margin-top: 250px;
+    text-align: center;
+    margin-left: 4px;
+  }
+
+  .experience__container > div {
+    width: 100%;
+    padding: 2rem 1rem;
+    margin-left: 5.4%;
+  }
+}

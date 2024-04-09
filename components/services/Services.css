@@ -1,0 +1,54 @@
+#services {
+  
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: -50rem;
+  
+
+
+}
+
+
+
+.services__container {
+   gap: 3rem;
+ 
+}
+
+
+
+
+/*---------Media Queries (medium devices)------------------*/
+
+@media screen and  (min-width: 1920px) {
+  #services {
+    position: relative;
+    top: -65rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .services__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-left: 9%; 
+        
+    }
+
+    .service {
+        height: auto;
+         
+    }
+  
+  }
+  
+  /*---------Small Queries (Small devices)------------------*/
+  
+  @media screen and (max-width: 600px) {
+    .services__container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+         margin-left: 4%; 
+    }
+  }

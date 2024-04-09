@@ -1,0 +1,174 @@
+#about {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: -60rem;
+  
+
+}
+
+
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%; 
+  
+}
+
+
+
+.about__cards {
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  left: -50%;
+  gap: 1.5rem;
+  
+}
+
+.about__card {
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary-variant),
+    transparent
+  );
+  
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.about__icon {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about__card h5 {
+  font-size: 0.95rem;
+}
+
+.about__card small {
+  font-size: 0.7rem;
+  color: var(--color-light);
+}
+
+.about__card:hover {
+  box-shadow: 0 0 20px #ece7e7;
+}
+
+/* css cube */
+
+.wrap {
+  position: relative;
+  margin-top: 288px;
+  margin-left: 15%;
+  margin-bottom: 50%;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.cube {
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 200px;
+  /* margin: auto; */
+  position: absolute;
+  left:125%;
+  margin-top:30%;
+}
+
+.cube img {
+  position: absolute;
+  opacity: 0.9;
+}
+
+.cube .landing {
+  border-radius: 0 0 0 0;
+}
+
+.cube img:nth-child(1) {
+  transform: rotateY(0deg) translateZ(100px);
+}
+
+.cube img:nth-child(2) {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube img:nth-child(3) {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube img:nth-child(4) {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube img:nth-child(5) {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.cube img:nth-child(6) {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes loop {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.cube {
+  animation: loop 10s linear infinite;
+}
+
+/* css cube */
+
+/*---------Media Queries (medium devices)------------------*/
+@media screen and  (min-width: 1920px) {
+  #about {
+    position: relative;
+    top: -85rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  
+
+  .about__cards {
+    margin-right: -16%;
+  }
+
+
+}
+
+/*---------Small Queries (Small devices)------------------*/
+
+@media screen and (max-width: 600px) {
+  
+
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-left: 51%;
+    width: 99%;
+  }
+
+  
+}
