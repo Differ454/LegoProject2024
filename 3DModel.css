@@ -10,6 +10,8 @@
 
 /* Earth css --> */
 
+
+
 /* canvasContainerAnimation css --> */
 
 #canvasContainerAnimation {
@@ -78,11 +80,24 @@
   top: 0rem;
 }
 
+/* Robot css --> */
+
+#canvasContainerAnimationRobot {
+  width: 80vw;
+  height: 80vh;
+  position: absolute;
+  top: 167rem;
+   /* z-index: 3;   */
+  left: 9.1rem; 
+
+}
 
 
 
 
-/*---------Media Queries (medium devices)------------------*/
+
+
+/*---------Media Queries (large and medium devices)------------------*/
 @media screen and  (min-width: 1920px) {
   /* Earth css --> */
 
@@ -155,8 +170,24 @@
     position: relative;
     top: -6rem;
   }
+
+  /* Robot css --> */
+
+#canvasContainerAnimationRobot {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 190rem;
+   /* z-index: 3;   */
+  left: 0rem; 
+
 }
 
+  
+
+}
+
+/*---------Media Queries (medium devices)------------------*/
 
 @media screen and (max-width: 1024px) {
   /* Earth css --> */
@@ -230,6 +261,9 @@
     position: relative;
     top: 0rem;
   }
+
+ 
+ 
 }
 
 /*---------Small Queries (Small devices)------------------*/

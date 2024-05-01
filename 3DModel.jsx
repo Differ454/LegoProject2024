@@ -366,10 +366,10 @@ const Earth = () => {
 
   // function to move the mouse
 
-  addEventListener("mousemove", () => {
-    mouse.x = (event.clientX / innerWidth) * 2 - 1;
-    mouse.y = -(event.clientY / innerHeight) * 2 + 1;
-  });
+  // addEventListener("mousemove", () => {
+  //   mouse.x = (event.clientX / innerWidth) * 2 - 1;
+  //   mouse.y = -(event.clientY / innerHeight) * 2 + 1;
+  // });
 };
 
 
@@ -455,10 +455,10 @@ const Avatar = () => {
 
   // function to move the mouse
 
-  addEventListener("mousemove", () => {
-    mouse.x = (event.clientX / innerWidth) * 2 - 1;
-    mouse.y = -(event.clientY / innerHeight) * 2 + 1;
-  });
+  // addEventListener("mousemove", () => {
+  //   mouse.x = (event.clientX / innerWidth) * 2 - 1;
+  //   mouse.y = -(event.clientY / innerHeight) * 2 + 1;
+  // });
   // scene.add(sphere);
 };
 
@@ -560,10 +560,10 @@ const Phoenix = () => {
 
   // function to move the mouse
 
-  addEventListener("mousemove", () => {
-    mouse.x = (event.clientX / innerWidth) * 2 - 1;
-    mouse.y = -(event.clientY / innerHeight) * 2 + 1;
-  });
+  // addEventListener("mousemove", () => {
+  //   mouse.x = (event.clientX / innerWidth) * 2 - 1;
+  //   mouse.y = -(event.clientY / innerHeight) * 2 + 1;
+  // });
   // scene.add(sphere);
 };
 
@@ -689,16 +689,16 @@ scene.add( light );
 
 //   // function to move the mouse
 
-   addEventListener("mousemove", () => {
-     mouse.x = (event.clientX / innerWidth) * 2 - 1;
-     mouse.y = -(event.clientY / innerHeight) * 2 + 1;
-   });
+  //  addEventListener("mousemove", () => {
+  //    mouse.x = (event.clientX / innerWidth) * 2 - 1;
+  //    mouse.y = -(event.clientY / innerHeight) * 2 + 1;
+  //  });
 //   // scene.add(sphere);
 
 
  };
 
-// Animation Model --> test
+// Animation Model --> 
 
 
 
@@ -799,10 +799,10 @@ const SateliteModel = () => {
 
   // function to move the mouse
 
-  addEventListener("mousemove", () => {
-    mouse.x = (event.clientX / innerWidth) * 2 - 1;
-    mouse.y = -(event.clientY / innerHeight) * 2 + 1;
-  });
+  // addEventListener("mousemove", () => {
+  //   mouse.x = (event.clientX / innerWidth) * 2 - 1;
+  //   mouse.y = -(event.clientY / innerHeight) * 2 + 1;
+  // });
   // scene.add(sphere);
 };
 
@@ -810,12 +810,137 @@ const SateliteModel = () => {
 //--> SateliteModel
 
 
+// Animation Robot Model --> 
 
+const AnimationRobotModel = () => {
+  //   // camera function
+  //   //test useEffect
+    
+  
+    const canvasContainer = document.querySelector("#canvasContainerAnimationRobot");
+     const scene = new THREE.Scene();
+     const camera = new THREE.PerspectiveCamera(
+       50,
+       canvasContainer.offsetWidth / canvasContainer.offsetHeight,
+       0.1,
+       1000
+     );
+     console.log(scene);
+  
+  //   //function to render
+  
+     const renderer = new THREE.WebGLRenderer({
+       antialias: true,
+       canvas: document.querySelector("#canvasContainerAnimationRobot"), //--> to improve the image
+       alpha: true,
+     });
+  
+  //   //OrbitControls
+     const orbitControls = new OrbitControls(camera, renderer.domElement);
+     orbitControls.enableDamping = false;
+     orbitControls.autoRotate = false;
+     orbitControls.enableZoom = false;
+    
+  
+  
+  //   //Responsive Desing with Three Js
+  
+     window.addEventListener("resize", function () {
+       var width = window.innerWidth;
+       var height = window.innerHeight;
+       camera.aspect = width / height;
+       camera.updateProjectionMatrix();
+       renderer.setSize(width, height);
+     });
+  
+  //   //Responsive Desing with Three Js
+  
+     renderer.setSize(canvasContainer.offsetWidth, canvasContainer.offsetHeight);
+     renderer.setPixelRatio(window.devicePixelRatio); //--> to improve the pixels to the image
+  
+     var loader = new GLTFLoader();
+     let mixer; // Animation mixer
+  
+      // to content the whole object
+  
+      loader.load("/assets/img/buster_drone/scene.gltf", function (gltf) {
+      mixer = new THREE.AnimationMixer(gltf.scene);
+      const action = mixer.clipAction(gltf.animations[0]); // Assuming there is at least one animation
+      action.play();
+  
+       const model = gltf.scene;
+       
+        scene.add(model);
+  
+      //  model.position.x = -12;
+      // Rotate the model 180 degrees to the left
+      model.rotation.y = Math.PI/2;
+      // model.rotation.x = Math.PI/14;
+  
+       const light = new THREE.PointLight( 0xff000000, 29, 3000 ); // ( 0xff0000, 6, 1000 );
+  light.position.set( 40, 50, 30 );
+  scene.add( light );
+  
+       
+      
+     });
+  
+  
+      //camera.position.z = 4;
+      //camera.position.y = -1.8;
+      //camera.position.x = 2;
+    
+  
+   
+     camera.position.z = 0;
+     camera.position.y = -1.3;
+     camera.position.x = 3;
+  
+     const mouse = {
+       x: undefined,
+       y: undefined,
+     };
+  
+  //   //animate function
+     const animate = () => {
+       requestAnimationFrame(animate);
+  
+         // Update the animation mixer
+          if (mixer) {
+           const delta = 0.009; // You can use clock.getDelta() for a more accurate value
+           mixer.update(delta);
+       }
+  
+       orbitControls.update();
+       renderer.render(scene, camera);
+       
+     };
+  
+  
+  // Light
 
+  const ambientalLight = new THREE.AmbientLight(0xffffff, 0.9);
+  scene.add(ambientalLight);
 
-
-
-
+  const PointLight = new THREE.PointLight(0xffffff, 1);
+  PointLight.position.set(50, 52, 50); // (6, 7, 6); 
+  scene.add(PointLight);
+  
+     animate();
+  
+  //   // function to move the mouse
+  
+    //  addEventListener("mousemove", () => {
+    //    mouse.x = (event.clientX / innerWidth) * 2 - 1;
+    //    mouse.y = -(event.clientY / innerHeight) * 2 + 1;
+    //  });
+  //   // scene.add(sphere);
+  
+  
+   };
+  
+  // Animation Robot Model --> 
+  
 
 
 const Models = () => {
@@ -826,7 +951,9 @@ const Models = () => {
   Moon();
   Phoenix();
   AnimationModel();
+  AnimationRobotModel();
   SateliteModel();
+  
   
  
   
