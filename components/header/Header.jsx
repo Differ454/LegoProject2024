@@ -12,6 +12,7 @@ const Header = () => {
         <h4>Hej jeg er</h4>
         <h1>Diego Ruiz</h1>
         <h3 className="text light">FullStack Udvikler</h3>
+        <h4 className="text light">Elektronikingeniør</h4>
         <React.Suspense fallback={<div>Loading...</div>}>
         <CTA />
         </React.Suspense>

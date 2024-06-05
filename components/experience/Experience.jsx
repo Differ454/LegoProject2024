@@ -10,6 +10,8 @@ import { SiPhp } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { SiThreedotjs } from "react-icons/si";
+import { SiCplusplus } from "react-icons/si";
+import { CgCPlusPlus } from "react-icons/cg";
 
 
 
@@ -105,6 +107,22 @@ function Experience() {
               <SiMysql className="experience__details-icon"/>
               <div>
                 <h4>MySQL</h4>
+                <small className="text-light">Erfaren</small>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <CgCPlusPlus className="experience__details-icon"/>
+              <div>
+                <h4>C++ (Firmware)</h4>
+                <small className="text-light">Erfaren</small>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <SiCplusplus className="experience__details-icon"/>
+              <div>
+                <h4>C (Firmware)</h4>
                 <small className="text-light">Erfaren</small>
               </div>
             </article>
