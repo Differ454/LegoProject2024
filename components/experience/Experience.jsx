@@ -12,6 +12,7 @@ import { SiMysql } from "react-icons/si";
 import { SiThreedotjs } from "react-icons/si";
 import { SiCplusplus } from "react-icons/si";
 import { CgCPlusPlus } from "react-icons/cg";
+import { IoLogoPython } from "react-icons/io5";
 
 
 
@@ -124,6 +125,13 @@ function Experience() {
               <div>
                 <h4>C (Firmware)</h4>
                 <small className="text-light">Erfaren</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <IoLogoPython className="experience__details-icon"/>
+              <div>
+                <h4>Python ~ Machine Learning - Artificial Intelligence (Learning process)</h4>
+                <small className="text-light">nybegynder</small>
               </div>
             </article>
           </div>
