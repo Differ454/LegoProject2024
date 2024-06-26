@@ -4,11 +4,12 @@
    margin: 0;
    padding: 0;
    top: -40rem;
-   
- 
- 
  }
 
+ #portfolio h5 {
+  
+   font-size: 1.4rem;
+ }
 
 
 .item-image .ptc {

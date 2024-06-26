@@ -9,18 +9,18 @@
     list-style: none;
     text-decoration: none;
     /* overflow-x: hidden; */
-   
+
 
 }
 
 :root {
     --color-bg: #1f1f38;
-    --color-perro:rgb(25, 25, 122)8;
+    --color-perro: rgb(25, 25, 122)8;
     --color-bg-variant: #2c2c6c;
     --color-primary: #4db5ff;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-white: #fff;
-    --color-light: #rgba(255, 255, 255, 0,6);
+    --color-light: #rgba(255, 255, 255, 0, 6);
 
     --transition: all 400ms ease;
     --transitionB: all 2000ms ease;
@@ -41,24 +41,24 @@ html {
 
 body {
 
-   font-family: 'Poppins', sans-serif;
-   background: rgb(0, 0, 0);
-   color: var(--color-white);
-   line-height: 1.7;
-  background-image: url(../assets/space6.png); 
-  
+    font-family: 'Poppins', sans-serif;
+    background: rgb(0, 0, 0);
+    color: var(--color-white);
+    line-height: 1.7;
+    background-image: url(../assets/space6.png);
 
-    background-attachment:fixed;   
+
+    background-attachment: fixed;
     background-size: cover;
-    overflow-x: hidden; 
-   
+    overflow-x: hidden;
+
 }
 
 /*---------------- GENERAL STYLES --------------*/
 
 container {
-     width: var(--container-width-lg);
-     margin: 0 auto;
+    width: var(--container-width-lg);
+    margin: 0 auto;
 }
 
 h1,
@@ -66,27 +66,28 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 h1 {
-   font-size: 2.5rem;
-   font-style: Arial;
-   color: var(--color-primary);
+    font-size: 2.5rem;
+    font-style: Arial;
+    color: var(--color-primary);
 }
 
 section {
     margin-top: 8rem;
 }
 
-section > h2, section > h5 {
+section>h2,
+section>h5 {
     text-align: center;
     color: var(--color-light);
 }
 
-section > h2 {
-     color: var(--color-primary);
-     margin-bottom: 3rem;
+section>h2 {
+    color: var(--color-primary);
+    margin-bottom: 3rem;
 }
 
 .text-light {
@@ -94,8 +95,8 @@ section > h2 {
 }
 
 a {
-   color: var(--color-primary);
-   transition: var(--transition);
+    color: var(--color-primary);
+    transition: var(--transition);
 }
 
 a:hover {
@@ -123,19 +124,19 @@ a:hover {
     cursor: pointer;
     border: 1px solid var(--color-primary);
     transition: var(--transition);
-    
+
 }
 
 .btn-perro:hover {
     background: var(--color-primary);
     color: var(--color-bg);
     border-color: transparent;
-  }
+}
 
 .btn:hover {
-  background: var(--color-white);
-  color: var(--color-bg);
-  border-color: transparent;
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
 }
 
 .btn-primary {
@@ -148,8 +149,8 @@ a:hover {
     width: 75%;
     background: var(--color-primary);
     color: var(--color-bg);
-    
-    
+
+
 }
 
 
@@ -160,70 +161,74 @@ a:hover {
 }
 
 img {
-   display: block;
-   width: 100%;
-   object-fit: cover;
-   border-radius: 12rem 12rem 0 0;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12rem 12rem 0 0;
 }
 
 img:hover {
-    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.2);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     transition: var(--transitionB);
-} 
+}
 
-  
+
 
 /*---------Media Queries (medium devices)------------------*/
 
 @media screen and (max-width: 1024px) {
     .container {
-         width: var(--container-width-md);
+        width: var(--container-width-md);
     }
 
-     section {
-      margin-top: 6rem;
-      }
+    section {
+        margin-top: 6rem;
+    }
 
-      img:hover {
-        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    img:hover {
+        transform: scale(1.2);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
         transition: var(--transitionB);
-      } 
+    }
 
-      h1 {
+    h1 {
         margin-left: 20%;
-         }
+    }
 
-      h5 {
+    h5 {
         margin-left: 20%;
-      }
+    }
 
-      section > h2, section > h5 {
+    section>h2,
+    section>h5 {
         margin-left: 2%;
     }
 
     .btn-primary-about {
         margin-left: 52%;
-     }
+    }
 }
 
 /*---------Media Queries (Small Devices)------------------*/
 
 @media screen and (max-width: 600px) {
     .container {
-         width: var(--container-width-sm);
+        width: var(--container-width-sm);
     }
 
-     section > h2 {
-      margin-bottom: 2rem;
-      }
+    section>h2 {
+        margin-bottom: 2rem;
+    }
 
-      img:hover {
-        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    img:hover {
+        transform: scale(1.2);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
         transition: var(--transitionB);
-      } 
+    }
 
-      .btn-primary-about {
-       margin-left: 40%;
+    .btn-primary-about {
+        margin-left: 40%;
     }
 
     h1 {
@@ -232,6 +237,5 @@ img:hover {
         color: rgb(219, 216, 216);
     }
 
-    
-}
 
+}
