@@ -14,7 +14,7 @@ const App = () => {
 
     <>
 
-
+      
 
       <React.Suspense fallback={<div>Loading...</div>}>
         <Header />
@@ -47,6 +47,8 @@ const App = () => {
       <React.Suspense fallback={<div>Loading...</div>}>
         <Footer />
       </React.Suspense>
+
+     
 
     </>
   );

@@ -31,13 +31,15 @@ nav a {
 }
 
 nav a:hover {
-     background: rgb(0, 0, 0, 0.3);
+     background: rgb(0, 0, 0, 0.7);
 }
 
 nav a.active {
-     background: var(--color-bg);
+     background: transparent;
      color: var(--color-white);
 }
+
+
 
 /*---------Media Queries (medium devices)------------------*/
 

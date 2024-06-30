@@ -6,18 +6,23 @@ import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { useState } from "react";
+import { GiConverseShoe } from "react-icons/gi";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
+   
   return (
     <nav>
       <a
         href="#"
+        
         onClick={() => setActiveNav("#")}
+        
         className={activeNav === "#" ? "active" : ""}
       >
         <AiOutlineHome />
       </a>
+
       <a
         href="#about"
         onClick={() => setActiveNav("#about")}
@@ -33,9 +38,9 @@ const Nav = () => {
         <BiBook />
       </a>
       <a
-        href="#services"
-        onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? "active" : ""}
+        href="#portfolio"
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
       >
         <RiServiceLine />
       </a>
@@ -45,6 +50,13 @@ const Nav = () => {
         className={activeNav === "#contact" ? "active" : ""}
       >
         <BiMessageSquareDetail />
+      </a>
+      <a
+        href="#footer"
+        onClick={() => setActiveNav("#footer")}
+        className={activeNav === "#footer" ? "active" : ""}
+      >
+        <GiConverseShoe />
       </a>
     </nav>
   );
