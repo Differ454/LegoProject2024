@@ -59,8 +59,8 @@ const data = [
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      {<h5>Udvalgte projekter</h5> }
-      <h2>Nogle projekter jeg har arbejdet på</h2>
+      {<h5>Portfolio</h5> }
+      <h2>Some projects I have worked on</h2>
 
       <div className="container portfolio__container">
         {data.map(({ id, image, title, github, demo }) => {

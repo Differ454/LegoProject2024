@@ -99,8 +99,8 @@
 
 /*---------Media Queries (large and medium devices)------------------*/
 @media screen and  (min-width: 1920px) {
-  /* Earth css --> */
 
+  /* Earth css --> */
   #canvasContainer {
     width: 100vw;
     height: 100vh;
@@ -190,13 +190,15 @@
 /*---------Media Queries (medium devices)------------------*/
 
 @media screen and (max-width: 1024px) {
+
   /* Earth css --> */
 
   #canvasContainer {
-    width: 100vw;
-    height: 100vh;
+    width: 50vw;
+    height: 50vh;
     position: absolute;
-    top: 7rem;
+    left: 16rem;
+    top: 19rem;
     z-index: 2;
   }
 
@@ -224,11 +226,11 @@
   /* canvasContainerLego Astrounauts css --> */
 
   #canvasContainerLego {
-    width: 100vw;
-    height: 100vh;
+    width: 50vw;
+    height: 50vh;
     position: relative;
-    top: -5rem;
-    left: 1rem;
+    top:7rem;
+    left: 17rem;
     z-index: 1;
 
   }

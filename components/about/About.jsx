@@ -14,8 +14,8 @@ const About = () => {
   return (
     <section id="about">
       
-      <h5>Lære at kende</h5>
-      <h2>Om mig</h2>
+      <h5>Get to know</h5>
+      <h2>About me</h2>
       
 
       <div className="container about__container">
@@ -42,20 +42,20 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
-              <h5>Erfaring</h5>
-              <small>5 + Års Arbejde</small>
+              <h5>Experience</h5>
+              <small>10 + Year's Working</small>
             </article>
 
             <article className="about__card">
               <FiUsers className="about__icon" />
-              <h5>klienter</h5>
-              <small>20+ I hele verden</small>
+              <h5>clients</h5>
+              <small>20 + Worldwide</small>
             </article>
 
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              <h5>Projekter</h5>
-              <small>20+ Afsluttet</small>
+              <h5>Projects</h5>
+              <small>20 + Finished</small>
             </article>
           </div>
 

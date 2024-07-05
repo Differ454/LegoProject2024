@@ -20,17 +20,17 @@ import { IoLogoPython } from "react-icons/io5";
 function Experience() {
   return (
     <section id="experience">
-      <h1>Erfaring</h1>
-      <h2>Softwareudvikling</h2>
+      <h1>Experience</h1>
+      <h2>Software development</h2>
       <div className="container experience__container">
         <div className="experience__fontend">
-          <h3>Frontend udvikling</h3>
+          <h3>Frontend development</h3>
           <div className="experience__content">
             <article className="experience__details">
               <AiOutlineHtml5 className="experience__details-icon" size={28}/>
               <div>
                 <h4>HTML</h4>
-                <small className="text-light">Erfaren</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
 
@@ -38,7 +38,7 @@ function Experience() {
               <SiCsswizardry className="experience__details-icon" size={28}/>
               <div>
                 <h4>CSS</h4>
-                <small className="text-light">Mellemliggende</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
 
@@ -46,7 +46,7 @@ function Experience() {
               <SiJavascript className="experience__details-icon" size={28}/>
               <div>
                 <h4>JavaScript</h4>
-                <small className="text-light">Erfaren</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
 
@@ -54,7 +54,7 @@ function Experience() {
               <SiTailwindcss className="experience__details-icon" size={28}/>
               <div>
                 <h4>Tailwind</h4>
-                <small className="text-light">Mellemliggende</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
 
@@ -62,7 +62,7 @@ function Experience() {
               <GrReactjs className="experience__details-icon" size={28}/>
               <div>
                 <h4>ReactJs</h4>
-                <small className="text-light">Erfaren</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
 
@@ -71,20 +71,20 @@ function Experience() {
               <SiThreedotjs className="experience__details-icon" size={28}/>
               <div>
                 <h4>ThreeJs</h4>
-                <small className="text-light">Mellemliggende</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article> 
           </div>
         </div>
         {/*----------------> End of Frontend <-----------------*/}
         <div className="experience__backend">
-          <h3>Backend udvikling</h3>
+          <h3>Backend development</h3>
           <div className="experience__content">
             <article className="experience__details">
               <FaNodeJs className="experience__details-icon" size={28}/>
               <div>
                 <h4>NodeJs</h4>
-                <small className="text-light">Erfaren</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
 
@@ -92,7 +92,7 @@ function Experience() {
               <SiPhp className="experience__details-icon" size={28}/>
               <div>
                 <h4>PHP</h4>
-                <small className="text-light">Erfaren</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
 
@@ -100,7 +100,7 @@ function Experience() {
               <SiMongodb className="experience__details-icon" size={28}/>
               <div>
                 <h4>MongoDB</h4>
-                <small className="text-light">Erfaren</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
 
@@ -108,7 +108,7 @@ function Experience() {
               <SiMysql className="experience__details-icon" size={28}/>
               <div>
                 <h4>MySQL</h4>
-                <small className="text-light">Erfaren</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
 
@@ -116,7 +116,7 @@ function Experience() {
               <CgCPlusPlus className="experience__details-icon" size={28}/>
               <div>
                 <h4>C++ (Firmware)</h4>
-                <small className="text-light">Erfaren</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
 
@@ -124,14 +124,14 @@ function Experience() {
               <SiCplusplus className="experience__details-icon" size={28}/>
               <div>
                 <h4>C (Firmware)</h4>
-                <small className="text-light">Erfaren</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <IoLogoPython className="experience__details-icon" size={70}/>
               <div>
                 <h4>Python ~ Machine Learning - Artificial Intelligence (Learning process)</h4>
-                <small className="text-light">nybegynder</small>
+                <small className="text-light">beginner</small>
               </div>
             </article>
           </div>
