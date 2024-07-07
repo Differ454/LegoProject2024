@@ -87,8 +87,8 @@
   height: 80vh;
   position: absolute;
   top: 167rem;
-   /* z-index: 3;   */
-  left: 9.1rem; 
+  /* z-index: 3;   */
+  left: 9.1rem;
 
 }
 
@@ -98,7 +98,7 @@
 
 
 /*---------Media Queries (large and medium devices)------------------*/
-@media screen and  (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
 
   /* Earth css --> */
   #canvasContainer {
@@ -173,21 +173,21 @@
 
   /* Robot css --> */
 
-#canvasContainerAnimationRobot {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 190rem;
-   /* z-index: 3;   */
-  left: 0rem; 
+  #canvasContainerAnimationRobot {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 190rem;
+    /* z-index: 3;   */
+    left: 0rem;
+
+  }
+
+
 
 }
 
-  
-
-}
-
-/*---------Media Queries (medium devices)------------------*/
+/*---------Media Queries (medium devices - Tablets)------------------*/
 
 @media screen and (max-width: 1024px) {
 
@@ -206,31 +206,31 @@
 
   #canvasContainerAnimation {
     width: 33vw;
-    height: 100vh;
+    height: 50vh;
     position: absolute;
-    left: 67rem;
-    top: -15rem;
+    left: 43rem;
+    top: -14rem;
   }
 
 
   /* canvasContainerStateSpace css --> */
 
   #canvasContainerSatelite {
-    width: 100vw;
-    height: 100vh;
+    width: 45vw;
+    height: 45vh;
     position: absolute;
-    left: -38rem;
-    top: 10rem;
+    left: -3rem;
+    top: -9rem;
   }
 
   /* canvasContainerLego Astrounauts css --> */
 
   #canvasContainerLego {
-    width: 50vw;
+    width: 100vw;
     height: 50vh;
     position: relative;
-    top:7rem;
-    left: 17rem;
+    top: 7rem;
+    left: 0rem;
     z-index: 1;
 
   }
@@ -238,34 +238,48 @@
   /* Moon css --> */
 
   #canvasContainerMoon {
-    width: 100vw;
-    height: 100vh;
+    width: 50vw;
+    height: 50vh;
     position: absolute;
-    top: -4rem;
-    left: 3rem;
+    top: 9rem;
+    left: 21rem;
   }
 
   /* Phoenix css --> Blue Astrounaut*/
 
   #canvasContainerPhoenix {
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     position: absolute;
-    top: 20rem;
+    top: 31rem;
     z-index: 2;
+    left: 0rem;
   }
 
   /* Avatar css --> Red Astrounaut */
 
   #canvasContainerAvatar {
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     position: relative;
-    top: 0rem;
+    top: 20rem;
+    left: 0rem;
   }
 
- 
- 
+  /* Robot css --> */
+
+  #canvasContainerAnimationRobot {
+    width: 100vw;
+    height: 75vh;
+    position: absolute;
+    
+    top: 172rem;
+    left: 1rem;
+
+  }
+
+
+
 }
 
 /*---------Small Queries (Small devices)------------------*/

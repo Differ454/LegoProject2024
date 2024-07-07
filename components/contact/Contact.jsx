@@ -21,6 +21,7 @@ function Contact() {
   return (
     <section id='contact'>
       
+      
       <h5>Get in touch</h5>
       <h2>Contact me</h2>
       

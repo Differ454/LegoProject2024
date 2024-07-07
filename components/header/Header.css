@@ -53,10 +53,10 @@ header {
 /* background: linear-gradient(var(--color-primary), transparent); */
 .Me {
   background: transparent;
-  width: 22rem;
-  height: 22rem;
+  width: 22vw;
+  height: 55vh;
   position: absolute;
-  left: calc(51% - 11rem);
+  left: calc(51% - 14rem);
   margin-top: 25%;
 
   border-radius: 12rem 12rem 0 0;
@@ -67,9 +67,10 @@ header {
 
 .Me img {
 
-  width: 80%;
+  width: 15vw;
   position: relative;
-  left: 8%;
+  left: 4rem;
+  top: 2rem;
 
 }
 
@@ -144,22 +145,39 @@ header {
 
   .header__container {
     text-align: center;
-    height: 100vh;
+    height: 29vh;
+    width: 100vw;
     position: relative;
     margin: 0;
     padding: 0;
+    top:11rem;
+
+  }
+
+  .Me {
+    width: 31vw;
+    height: 33vh;
+    position: absolute;
+    left: calc(51% - 10rem);
+    top: 29%;
+
+  }
+
+  .Me img {
+
+    width: 27vw;
+    position: relative;
+    left: 0rem;
     top: 0rem;
-
+  
   }
 
-  /* .header__container h1 {
-    margin-left: 16%;
-    font-size: 2.5rem;
-    font-style: Arial;
-    color: var(--color-primary);
+   .header__container h1 {
+    margin-left: 0%;
+    
 
   }
-
+/*
   .header__container h3 {
     margin-left: 16%;
     font-style: Arial;

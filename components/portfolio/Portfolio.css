@@ -62,6 +62,14 @@
 /*---------Media Queries (medium devices)------------------*/
 
 @media screen and (max-width: 1024px) {
+
+   #portfolio {
+      top: -90rem;
+  }
+
+  section>h2, section>h5 {
+   margin-left: 1%;
+}
     .portfolio__container {
        grid-template-columns: 1fr 1fr;
        gap: 1.2rem;

@@ -4,9 +4,6 @@
     margin: 0;
     padding: 0;
     top: -60rem;
-    
-  
-  
 }
 
 .experience__container {
@@ -87,6 +84,11 @@
 
 
 @media screen and (max-width: 1024px) {
+
+  #experience {
+
+    top: -92rem;
+}
   .experience__container {
     grid-template-columns: 1fr;
   }
@@ -94,7 +96,7 @@
   #experience h1 {
     /* text-align: center; */
     margin-top: 250px;
-    margin-left: 4%;
+    margin-left: 0%;
     
     
   }
@@ -102,6 +104,7 @@
   #experience h2 {
     text-align: center;
     margin-top: 3px;
+    margin-left: 0%;
   }
   
 

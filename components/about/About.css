@@ -83,14 +83,14 @@
   perspective-origin: 50% 50%;
 }
 
+
 .cube {
   transform-style: preserve-3d;
-  width: 200px;
-  height: 200px;
-  /* margin: auto; */
+  width: 10vw;
+  height: 10vh;
   position: absolute;
-  left:125%;
-  margin-top:30%;
+  left:45rem;
+  top: 15rem;
 }
 
 .cube img {
@@ -141,24 +141,44 @@
 
 /* css cube */
 
-/*---------Media Queries (medium devices)------------------*/
+/*---------Media Queries (Large devices)------------------*/
 @media screen and  (min-width: 1920px) {
   #about {
     position: relative;
     top: -85rem;
   }
 }
+/*---------Media Queries (medium devices Tablets)------------------*/
 
 @media screen and (max-width: 1024px) {
+
+  #about {
+    top: -69rem;
+    
+  }
   .about__container {
     grid-template-columns: 1fr;
     gap: 0;
   }
 
-  
+  .about__content {
+    width: 70vw;
+    position: relative;
+    top: -45rem;
+    left: 29rem;
+  }
 
   .about__cards {
     margin-right: -16%;
+  }
+
+  .cube {
+    transform-style: preserve-3d;
+    width: 22vw;
+    height: 10vh;
+    position: absolute;
+    left: 19rem;
+    top: 12rem;
   }
 
 

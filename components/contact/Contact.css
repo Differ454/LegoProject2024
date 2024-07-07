@@ -81,6 +81,17 @@ textarea {
 /* ********************************** MEDIA QUERIES (MEDIUM DEVICES) ************************ */
 
 @media screen and (max-width: 1024px) {
+
+  #contact {
+    position: relative;
+    top: -80rem;
+    left: -3rem;
+}
+
+section>h2, section>h5 {
+  margin-left: 8%;
+}
+
   .container.contact__container {
     grid-template-columns: 1fr;
     gap: 2rem;
