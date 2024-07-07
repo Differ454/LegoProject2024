@@ -92,6 +92,10 @@ section>h2, section>h5 {
   margin-left: 8%;
 }
 
+h5 {
+  margin-left: 0%;
+}
+
   .container.contact__container {
     grid-template-columns: 1fr;
     gap: 2rem;

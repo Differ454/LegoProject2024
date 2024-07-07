@@ -153,6 +153,10 @@
 @media screen and (max-width: 1024px) {
 
   #about {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
     top: -69rem;
     
   }
@@ -187,13 +191,42 @@
 /*---------Small Queries (Small devices)------------------*/
 
 @media screen and (max-width: 600px) {
-  
+  #about {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    top: -39rem;
+    
+  }
+
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about__content {
+    width: 100vw;
+    position: relative;
+    top: -32rem;
+    left: 0rem;
+    overflow: hidden;
+  }
 
   .about__cards {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     margin-left: 51%;
     width: 99%;
+  }
+
+  .cube {
+    transform-style: preserve-3d;
+    width: 22vw;
+    height: 10vh;
+    position: absolute;
+    left: 19rem;
+    top: 12rem;
   }
 
   

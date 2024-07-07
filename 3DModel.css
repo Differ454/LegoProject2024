@@ -272,7 +272,7 @@
     width: 100vw;
     height: 75vh;
     position: absolute;
-    
+
     top: 172rem;
     left: 1rem;
 
@@ -303,27 +303,63 @@
     width: 40vw;
     height: 35vh;
     position: absolute;
-    top: 24rem;
-    left: 3rem;
+    top: 3rem;
+    left: 10rem;
   }
 
-  /* Phoenix css --> */
+  /* canvasContainerLego Astrounauts css --> */
+
+  #canvasContainerLego {
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    top: -3rem;
+    left: 0rem;
+    z-index: 1;
+
+  }
+
+  /* canvasContainerStateSpace css --> */
+
+  #canvasContainerSatelite {
+    width: 80vw;
+    height: 30vh;
+    position: absolute;
+    left: -6rem;
+    top: -5rem;
+  }
+
+   /* canvasContainerAnimation css --> */
+
+   #canvasContainerAnimation {
+    width: 50vw;
+    height: 30vh;
+    position: absolute;
+    left: 13rem;
+    top: -4rem;
+  }
+
+
+
+  /* Phoenix css --> Blue Astrounaut*/
 
   #canvasContainerPhoenix {
-    width: 20vw;
-    height: 50vh;
-    padding-top: 0%;
-    margin-bottom: -435%;
-    margin-left: 0%;
+    width: 80vw;
+    height: 25vh;
+    position: absolute;
+    top: 13rem;
+    z-index: 2;
+    left: 0rem;
   }
 
-  /* Avatar css --> */
+   /* Avatar css --> Red Astrounaut */
 
-  #canvasContainerAvatar {
-    width: 20vw;
-    height: 50vh;
-    padding-top: 0%;
-    margin-bottom: -2430%;
-    margin-left: 0%;
+   #canvasContainerAvatar {
+    width: 80vw;
+    height: 25vh;
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+   
   }
 }

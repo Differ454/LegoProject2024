@@ -134,6 +134,7 @@ header {
 @media screen and (max-width: 1024px) {
   header {
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
     position: relative;
     margin: 0;
@@ -210,26 +211,40 @@ header {
 
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    height: 74vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    margin-top: 0rem;
+    padding: 0;
+    top: -45rem;
+    z-index: 2;
   }
+
+  .header__container {
+    text-align: center;
+    height: 29vh;
+    width: 100vw;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top:14rem;
+    left: -1rem;
+
+  }
+  
 
   .header__socials,
   .scroll__down {
     display: none;
   }
 
-  .header__container {
-    text-align: center;
-    height: 100vh;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    top: 0rem;
-  }
+  
 
   .header__container h1 {
     margin-left: 6%;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-style: Arial;
     color: var(--color-primary);
 
@@ -237,6 +252,7 @@ header {
 
   .header__container h3 {
     margin-left: 10%;
+    font-size: 0.9rem;
     font-style: Arial;
 
 
@@ -244,17 +260,21 @@ header {
 
   .header__container h4 {
     margin-left: 8%;
+    font-size: 0.7rem;
     font-style: Arial;
 
 
   }
 
   .cta {
-    margin-left: 16%;
+    left: 1rem;
+    position: relative;
+    top: 4rem;
   }
 
   .Me {
-    left: calc(55% - 11rem);
-    margin-left: 1%;
+    left: 10rem;
+    position: relative;
+    top: 0rem;
   }
 }
