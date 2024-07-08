@@ -362,4 +362,16 @@
     left: 2rem;
    
   }
+
+   /* Robot css --> */
+
+   #canvasContainerAnimationRobot {
+    width: 00vw;
+    height: 65vh;
+    position: absolute;
+
+    top: 172rem;
+    left: 1rem;
+
+  }
 }

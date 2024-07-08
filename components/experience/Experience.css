@@ -123,15 +123,27 @@
 /*---------Small Queries (Small devices)------------------*/
 
 @media screen and (max-width: 600px) {
+  #experience {
+    top: -48rem;
+    left: -1rem;
+}
+
   .experience__container {
     gap: 1rem;
   }
 
   #experience h1 {
-    margin-top: 250px;
+    margin-top: 10px;
     text-align: center;
-    margin-left: 4px;
+    left: 20rem;
   }
+
+  /* #experience h2 {
+    
+    margin-top: 10px;
+    text-align: center;
+    left: 20rem;
+  }  */
 
   .experience__container > div {
     width: 100%;
