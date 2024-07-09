@@ -54,7 +54,7 @@ nav a.active {
 @media screen and (max-width: 600px) {
      nav {
 
-          margin-left: -5%;
+          margin-left: 0%;
           z-index: 2;
           position: fixed;
           overflow-x: hidden;
