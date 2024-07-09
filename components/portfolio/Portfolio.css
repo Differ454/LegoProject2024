@@ -1,45 +1,44 @@
 #portfolio {
-  
+
    position: relative;
    margin: 0;
    padding: 0;
    top: -40rem;
- }
+}
 
- #portfolio h5 {
-  
+#portfolio h5 {
+
    font-size: 1.4rem;
- }
+}
 
 
 .item-image .ptc {
-  border-radius: 1rem; 
-  width: 100%;
-  height: 17rem;
+   border-radius: 1rem;
+   width: 100%;
+   height: 17rem;
 }
 
 .item-image .ptc:hover {
-    transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    transition: var(--transitionB);
-   
-  } 
+   transform: scale(0.9);
+   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+   transition: var(--transitionB);
+
+}
 
 .portfolio__container {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: 3.5rem;
-}  
+}
 
 .portfolio__item {
-   background: linear-gradient(
-      45deg,
-      transparent,
-      var(--color-primary-variant),
-      transparent
-    );
+   background: linear-gradient(45deg,
+         transparent,
+         var(--color-primary-variant),
+         transparent);
    padding: 1.2rem;
    border-radius: 2rem;
-   
+
    transition: var(--transitionB);
 }
 
@@ -47,17 +46,17 @@
    border-color: var(--color-primary-variant);
    background: transparent;
    box-shadow: 0 0 20px #6eebda;
-} 
+}
 
 .portfolio__item h3 {
    margin: 1.2rem 0 2rem;
 }
 
 .portfolio__item-cta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-} 
+   display: flex;
+   gap: 1rem;
+   margin-bottom: 1rem;
+}
 
 /*---------Media Queries (medium devices)------------------*/
 
@@ -65,37 +64,51 @@
 
    #portfolio {
       top: -90rem;
-  }
+   }
 
-  section>h2, section>h5 {
-   margin-left: 1%;
+   section>h2,
+   section>h5 {
+      margin-left: 1%;
+   }
+
+   .portfolio__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin-left: 8%;
+   }
+
 }
-    .portfolio__container {
-       grid-template-columns: 1fr 1fr;
-       gap: 1.2rem;
-       margin-left: 8%;
-     }  
-     
-  }
-  
-  /*---------Small Queries (Small devices)------------------*/
-  
-  @media screen and (max-width: 600px) {
 
-      #portfolio {
+/*---------Small Queries (Small devices)------------------*/
 
-         height: 150vh;
-         width: 100vw;
-         overflow: hidden;
-         position: relative;
-         top: -39rem;
-         margin-top: 10px;
-      }
+@media screen and (max-width: 600px) {
 
-     .portfolio__container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        margin-left: 5%;
-     }
-  }
+   #portfolio {
+
+      height: 328vh;
+      width: 100%;
+      overflow-x: hidden;
+      position: relative;
+      top: -55rem;
+      margin-top: 10px;
+      margin-left: 0rem;
+   }
+
+   #portfolio h5 {
+      font-size: 1.4rem;
+      text-align: center;
+      margin-left: 0rem;
+    }
   
+    #portfolio h2 {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-left: 0rem;
+    }
+
+   .portfolio__container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-left: 0rem;
+   }
+}

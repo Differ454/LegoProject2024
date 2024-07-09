@@ -46,9 +46,17 @@
   /*---------Small Queries (Small devices)------------------*/
   
   @media screen and (max-width: 600px) {
+
+    #services {
+      overflow-x: hidden;
+      width: 100%;
+      position: relative;
+      margin-left: 0rem;
+      top: -65rem;
+    }
     .services__container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-         margin-left: 4%; 
+        margin-left: 0rem;
     }
   }

@@ -366,12 +366,11 @@
    /* Robot css --> */
 
    #canvasContainerAnimationRobot {
-    width: 00vw;
-    height: 65vh;
+    width: 75vw;
+    height: 35vh;
     position: absolute;
-
-    top: 172rem;
-    left: 1rem;
+    top: 168rem;
+    left: 3rem;
 
   }
 }

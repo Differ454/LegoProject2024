@@ -1,23 +1,21 @@
 nav {
-    
-    background: linear-gradient(
-     45deg,
-     transparent,
-     var(--color-primary),
-     transparent
-   );
-    width: max-content;
-    display: block;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2rem;
-    display: flex;
-    gap: 0.8rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(15px);
+
+     background: linear-gradient(45deg,
+               transparent,
+               var(--color-primary),
+               transparent);
+     width: max-content;
+     display: block;
+     padding: 0.7rem 1.7rem;
+     z-index: 2;
+     position: fixed;
+     left: 50%;
+     transform: translateX(-50%);
+     bottom: 2rem;
+     display: flex;
+     gap: 0.8rem;
+     border-radius: 3rem;
+     backdrop-filter: blur(15px);
 }
 
 nav a {
@@ -45,19 +43,21 @@ nav a.active {
 
 @media screen and (max-width: 1024px) {
      nav {
-        
-        margin-left: 0%;
-      }  
-      
-   }
-   
-   /*---------Small Queries (Small devices)------------------*/
-   
-   @media screen and (max-width: 600px) {
-      nav {
-         
-         margin-left: 0%;
-         z-index: 2;
-        position: fixed;
-      }
-   }
+
+          margin-left: 0%;
+     }
+
+}
+
+/*---------Small Queries (Small devices)------------------*/
+
+@media screen and (max-width: 600px) {
+     nav {
+
+          margin-left: -5%;
+          z-index: 2;
+          position: fixed;
+          overflow-x: hidden;
+          width: 100%;
+     }
+}

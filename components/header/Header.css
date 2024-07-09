@@ -212,10 +212,10 @@ header {
 @media screen and (max-width: 600px) {
   header {
     height: 74vh;
-    width: 100vw;
-    overflow: hidden;
+    width: 100%;
+    overflow-x: hidden;
     position: relative;
-    margin: 0;
+    margin-left: 0rem;
     margin-top: 0rem;
     padding: 0;
     top: -45rem;
@@ -227,10 +227,11 @@ header {
     height: 29vh;
     width: 100vw;
     position: relative;
-    margin: 0;
+    margin-left: 0rem;
     padding: 0;
     top:14rem;
-    left: -1rem;
+    left:-1rem;
+    
 
   }
   

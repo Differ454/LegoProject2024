@@ -86,6 +86,23 @@ footer a {
 /* ********************************** MEDIA QUERIES (SMALL DEVICES) ************************ */
 
 @media screen and (max-width: 600px) {
+
+    #footer {
+        width: 100%;
+        overflow-x: hidden;
+        top: -57rem;
+        margin-left: 0%;
+        top: 82rem;
+        
+      }
+
+    /* #footer {
+        margin-left: 0rem;
+       
+        
+        top: 82rem;
+    } */
+
     .permalinks {
         flex-direction: column;
         gap: 1.5rem;

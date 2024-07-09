@@ -193,10 +193,11 @@
 @media screen and (max-width: 600px) {
   #about {
     height: 150vh;
-    width: 100vw;
-    overflow: hidden;
+    width: 100%;
+    overflow-x: hidden;
     position: relative;
     top: -39rem;
+    margin-left: 0rem;
     
   }
 
@@ -217,22 +218,37 @@
   }
 
   .about__cards {
+    overflow: hidden;
+    position: relative;
     width: 90vw;
     height: 50vh;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    left: -32rem;
     top: 15rem;
-    position: relative;
-    margin: 10px;
+    margin-left: -22rem; 
+    
    
     
   }
-
-  section>h2, section>h5 {
-    position: relative;
-    left: -2rem;
+  #about h5 {
+    
+    font-size: 1.4rem;
+    text-align: center;
+    margin-left: 0rem; 
 }
+
+#about h2 {
+ 
+  font-size: 1.4rem;
+  text-align: center;
+  margin-left: 0rem; 
+}
+
+  /* section>h2, section>h5 {
+    text-align: center;
+    position: relative;
+     left: -2rem; 
+} */
 
 
   .cube {

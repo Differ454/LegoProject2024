@@ -105,7 +105,55 @@ h5 {
 /* ********************************** MEDIA QUERIES (SMALL DEVICES) ************************ */
 
 @media screen and (max-width: 600px) {
+
+  #contact {
+    overflow-x: hidden;
+    width: 100%;
+    height: 114vh;
+    position: relative;
+    top: -51rem;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-left: -3%;
+  width: 76%;
+}
+
+#contact h5 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-left: 4rem;
+}
+
+#contact h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-left: 4rem;
+}
+
+.contact__options {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-left: -2rem;
+}
+
+.contact__option h5{
+
+  font-size: 1.4rem;
+  text-align: center;
+  left: 0rem;
+
+}
   .container.contact__container {
-    width: var(--container-width-sm);
+     width: var(--container-width-sm); 
+
+   
   }
 }

@@ -32,7 +32,7 @@ function Contact() {
           <article className="contact__option">
             <MdAttachEmail className='contact__option-icon' size={28}/>
             <h4>Email</h4>
-            <h5>differ454@hotmail.com</h5>
+            <h4>differ454@hotmail.com</h4>
             <a href='mailto:Differ454@hotmail.com' target='_blank'>Send a message</a>
           </article>
           <article className="contact__option">
