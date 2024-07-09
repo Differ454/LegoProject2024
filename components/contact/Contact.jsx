@@ -17,7 +17,7 @@ function Contact() {
     emailjs.sendForm('service_qtyadkk', 'template_a4gicdz', form.current, 'unMpfQ-R-TCO-9mTn')
     e.target.reset();
   };
-
+//test
   return (
     <section id='contact'>
       
