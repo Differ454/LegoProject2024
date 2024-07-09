@@ -109,6 +109,6 @@
    .portfolio__container {
       grid-template-columns: 1fr;
       gap: 1rem;
-      margin-left: 0rem;
+      margin-left: 2rem;
    }
 }
