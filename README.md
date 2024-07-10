@@ -1,4 +1,4 @@
-![Three.js3D](/public/assets/img/Deploy.png)
+![Three.js3D](./public/assets/Deploy.png)
 
 # Three.js3D-RepositoryProject
 
